@@ -308,6 +308,7 @@ a:focus {
     text-stroke: 1px var(--color-slide-title);
     grid-column-end: span 2;
     height: 10vw;
+    pointer-events: none;
 }
 
 .slide__title-inner:not(:last-child) {
