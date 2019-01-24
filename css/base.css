@@ -3,11 +3,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 *::after,
 *::before {
 	box-sizing: border-box;
-	cursor: none !important;
 }
 
 :root {
 	font-size: 16px;
+}
+
+html {
+	height: 100%;
 }
 
 body {
@@ -29,7 +32,9 @@ body {
 	background-color: var(--color-bg);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 	overflow: scroll;
+	height: 100%;
 }
 
 .cursor__inner {
@@ -159,6 +164,7 @@ a:focus {
 
 .nav {
 	display: flex;
+	align-items: center;
 }
 
 .nav__arrows {
@@ -194,6 +200,7 @@ a:focus {
 
 .nav__counter {
 	position: relative;
+	white-space: nowrap;
 }
 
 .nav__counter::before {
@@ -214,8 +221,8 @@ a:focus {
 }
 
 .slideshow {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	position: relative;
 }
 
@@ -286,10 +293,6 @@ a:focus {
 
 .slide--open .slide__figure-img {
 	background-position: 50% 0%;
-}
-
-.slide__number {
-	display: none;
 }
 
 .slide__title {
@@ -366,6 +369,7 @@ a:focus {
 .slide:not(.slide--open) .slide__back {
 	position: absolute;
 	height: 0;
+	overflow: hidden;
 	pointer-events: none;
 }
 
@@ -399,6 +403,11 @@ a:focus {
 }
 
 @media screen and (min-width: 53em) {
+	*,
+	*::after,
+	*::before {
+		cursor: none !important;
+	}
 	.message {
 		display: none;
 	}
@@ -412,7 +421,7 @@ a:focus {
 		align-content: space-between;
 		width: 100%;
 		max-width: none;
-		height: 100vh;
+		height: 100%;
 		padding: 2rem;
 		pointer-events: none;
 		grid-template-columns: 50% 50%;
@@ -534,5 +543,14 @@ a:focus {
 		text-align: right;
 		pointer-events: auto;
 		justify-self: end;
+	}
+}
+
+@media screen and (max-width: 53em) {
+	.cursor {
+		visibility: hidden;
+	}
+	.slide__title-inner {
+		transform: none !important;
 	}
 }
