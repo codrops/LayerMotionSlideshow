@@ -2,7 +2,7 @@
 
 A CSS Grid-based slideshow template with a layer motion effect on the main image and on the title.
 
-![Layer Motion Slideshow](https://tympanus.net/codrops/wp-content/uploads/2019/01/LayerMotionSlideshow_featured.jpg)
+![Layer Motion Slideshow](https://tympanus.net/codrops/wp-content/uploads/2019/01/LayerMotionSlideshow_featured-1.jpg)
 
 [Article on Codrops](https://tympanus.net/codrops/?p=37953)
 
