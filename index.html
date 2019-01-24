@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Layer Motion Slideshow | Codrops</title>
+		<meta name="description" content="A slideshow with a layer motion parallax effect and a different grid layout for every slide" />
+		<meta name="keywords" content="css grid, slideshow, parallax, layout, template, web design, web development, javascript" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<svg class="hidden">
+			<symbol id="icon-arrow" viewBox="0 0 24 24">
+				<title>arrow</title>
+				<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
+			</symbol>
+			<symbol id="icon-nav" viewBox="0 0 407 660">
+				<title>caret</title>
+				<path d="M77 0L0 77l253 253L0 583l77 77 330-330z"/>
+			</symbol>
+		</svg>
+		<main>
+			<p class="message">Please view on desktop to see the full layout</p>
+			<div class="frame">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Layer Motion Slideshow</h1>
+					<div class="nav">
+						<div class="nav__counter">
+							<span>0</span>/<span>0</span>
+						</div>
+						<div class="nav__arrows">
+							<button class="nav__arrow nav__arrow--prev" data-hover>
+								<svg class="icon icon--rotated icon--nav"><use xlink:href="#icon-nav"></use></svg>
+							</button>
+							<button class="nav__arrow nav__arrow--next" data-hover>
+								<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
+							</button>
+						</div>
+					</div>
+				</div><!-- /frame__title-wrap -->
+				<div class="frame__links">
+					<a href="https://tympanus.net/Tutorials/InteractiveParticles/" title="Previous Demo" data-hover>Previous demo</a>
+					<a href="https://tympanus.net/codrops/?p=37953" title="Back to the article" data-hover>Article</a>
+					<a href="https://github.com/codrops/LayerMotionSlideshow/" title="Find this project on GitHub" data-hover>GitHub</a>
+				</div>
+				<div class="index" data-hover>index</div>
+			</div><!--/frame-->
+			<div class="slideshow">
+				<div class="slide slide--layout-1" data-contentcolor="#e88655">
+					<div class="slide__figure slide__figure--main" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/1.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/3.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/2.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/4.jpg)"></div>
+					</div>
+					<h2 class="slide__title">Monachopsis</h2>
+					<div class="slide__text slide__text--right">
+						<p class="slide__text-meta">by Andrew Moore on 2/21</p>
+						<p class="slide__text-description">Thoughts in time and out of season. The Hitchhiker stood by the side of the road and leveled his thumb in the calm calculus of reason. Hi. How you doin’?</p>
+						<a class="slide__text-link" data-hover href="#">+</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>They would all have been delighted to have little Elfie with them in these last hours, but the fond grandfather could not spare her, and one of the girls, who had a message to deliver to Mrs. Abbott in the parlor, reported that the child lay fast asleep in Mr. Bellamy’s arms, while he was trying, at great inconvenience to himself, to write letters at a table, and black Candace sat patiently in the hall waiting for the long-delayed summons to put her little missy to bed.</p>
+						<p>It was late when the day scholars went home, and the others went up-stairs to their rooms very quietly. They all had to pass the large corner room which was always given to visitors, and, although the light was turned very low, they could see through the half-closed door that Candace was trying to undress the little girl without waking her, and the senator, whose broad back was toward the door, was bending down to unbutton the little shoes, one of which he lifted and pressed to his lips just as the last pair of girls went by.</p>
+						<p>The collector of old silver must have a pretty taste and a fine judgment. It is not an absolute law that age determines beauty. Hall-marks, though they denote date, do not guarantee excellence of design. Everything that bears the hall-mark of the Goldsmiths’ Hall of London is not beautiful, whether it be old or whether it be new. The connoisseur must digest the fact that the assay marks of the lion, the leopard’s head, the date-mark, and the rest, are so many official symbols, accurate as to date and sufficient guarantee as to the standard of the metal, but meaningless in regard to the art of the piece on which they stand. The assay offices are merely stamping machines. What Somerset House is to legal documents so the assay offices are to silver and gold plate, and nothing more. Hence the necessity of placing such mechanical control under Government supervision.</p>
+					</div>
+				</div>
+				<div class="slide slide--layout-2" data-contentcolor="#7dd2dc">
+					<div class="slide__figure slide__figure--main" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/5.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/6.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/7.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/8.jpg)"></div>
+					</div>
+					<h2 class="slide__title">Scabulous</h2>
+					</h2>
+					<div class="slide__text">
+						<p class="slide__text-meta">by Carol Tuksinam on 2/21</p>
+						<p class="slide__text-description">Awake. Shake dreams from your hair my pretty child, my sweet one. Choose the day and choose the sign of your day the day's divinity. First thing you see.</p>
+						<a class="slide__text-link" data-hover href="#">+</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>I have given sufficient space to marks in the present volume to indicate those used by the London and other assay offices. Some marks are given which do not appear elsewhere, and the arrangement of the tables should enable the beginner to come to a definite conclusion as to the date of his silver. In especial, the Table of variations in the shapes of shields in the hall-mark and standard-mark employed at the London Assay Office from the accession of Queen Elizabeth to the present day, is a feature not before given in so concise a form in any other volume.</p>
+						<p>The marks on silver are stamped, the design thus appears in relief, while the edges of the shield on which it appears are sunk. The reproduction of this has offered a difficulty in illustration in all volumes on old silver. To print black letters or designs on a white background, although easy, is unsatisfactory. On the contrary, to print the raised design in white on a dead black background is not a realistic presentation of the mark as it appears to the eye. After many experiments I have reproduced the marks in a manner more closely approaching their actual appearance, and less suggestive of black-and-white designs on paper.</p>
+						<p>The result of the somewhat chaotic alphabet marks has been to focus the attention of the collector too much on this particular side of the subject. The identification of marks, the outward symbols of time and place, have reduced the study of old silver to a somewhat lower plane than it should occupy by right. It is proper that such determining factors should have their place, but not the first place. There was a time when china collectors ignored paste and glaze and laid particular stress on marks, and it is a very happy accident that a great portion of English porcelain and much of English earthenware is unmarked. It has eventually led collectors to think for themselves and know something more of the technique and to learn to appreciate the artistic value of specimens of the potter’s art coming under their hand.</p>
+					</div>
+				</div>
+				<div class="slide slide--layout-3" data-contentcolor="#dc9d7f">
+					<div class="slide__figure slide__figure--main" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/14.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/15.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/16.jpg)"></div>
+					</div>
+					<h2 class="slide__title">Zenosyne</h2>
+					</h2>
+					<div class="slide__text">
+						<p class="slide__text-meta">by Cindy Brighton on 2/21</p>
+						<p class="slide__text-description">A vast radiant beach and cooled jeweled moon. Couples naked race down by its quiet side. And we laugh like soft, mad children. Smug in the wooly cotton brains of infancy.</p>
+						<a class="slide__text-link" data-hover href="#">+</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>What would one give for a few human touches in connexion with our old silver! We may imagine that our candlesticks of the year 1750 held the flickering wax candles which were guttering when the dawn broke when our great-great-grandfather lost his fortune at cards in the county of —, or maybe it was somebody else’s grandfather. But this is in the realms of fancy, and the fortune is literally fabulous. Why are there no George Morlands in the silversmith’s craft? Cannot the guilds dig out their romantic history from their archives? Just to think that our designer of candelabra and flagons ran a fine career on Hounslow Heath with gamesters and fighting men; or did he, just that once, have a duel with young Lord What’s-his-Name in the Guards, and pinked him? Did not the story get to White’s and to the Cocoa Tree Clubs, how the tradesman scored! But no such thing. All these initials of makers are empty of such vanities. We can do better with prints. Those who possess the engraved work of Ryland have the satisfaction of knowing that he was hounded by Bow Street runners and hid, like the modern Lefroy, at Stepney, and that he was hanged for forgery.</p>
+						<p>The scene may readily be imagined. The second of May 1696 had been fixed by Parliament as the last day in which the crowns, half-crowns, and shillings were to be received in payment of taxes for face value. The guards had to be called in to keep order. The Exchequer was besieged by a vast multitude from dawn to midnight. The Act provided that the money was to be brought in by before the 4th of May. The 3rd was a Sunday, therefore Saturday, the 2nd of May, was actually the last day.</p>
+						<p>A remarkable use of conjurators to confirm the evidence of witnesses occurs in 850 in a dispute between Cantius, Bishop of Siena, and Peter, Bishop of Arezzo, concerning certain parishes claimed by both. The occasion was a solemn one, for it was before a council held in Rome presided over jointly by Pope Leo IV. and the Emperor Louis II. Peter relied upon written charters, while Cantius produced witnesses. The Emperor pronounced the claim of the latter to be just, when he and twelve priests swore that the oaths of the witnesses were true and without deceit, whereupon the disputed parishes were adjudged to him.</p>
+					</div>
+				</div>
+				<div class="slide slide--layout-4" data-contentcolor="#e4d0a2">
+					<div class="slide__figure slide__figure--main" data-sort="4">
+						<div class="slide__figure-img" style="background-image: url(img/9.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="3">
+						<div class="slide__figure-img" style="background-image: url(img/10.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="2">
+						<div class="slide__figure-img" style="background-image: url(img/11.jpg)"></div>
+					</div>
+					<div class="slide__figure slide__figure--box" data-sort="1">
+						<div class="slide__figure-img" style="background-image: url(img/12.jpg)"></div>
+					</div>
+					<h2 class="slide__title">Chrysalism</h2>
+					</h2>
+					<div class="slide__text slide__text--right">
+						<p class="slide__text-meta">by Tamara Kaufmann on 2/21</p>
+						<p class="slide__text-description">The barns have stormed the windows kept, and only one of all the rest to dance and save us from the divine mockery of words.</p>
+						<a class="slide__text-link" data-hover href="#">+</a>
+					</div>
+					<button class="slide__back" data-hover>
+						<svg class="icon icon--back"><use xlink:href="#icon-arrow"></use></svg>
+					</button>
+					<div class="slide__content">
+						<p>The intense veneration with which relics were regarded, however, caused them to be generally adopted as the most effective means of adding security to oaths, and so little respect was felt for the simple oath that, ere long, the adjuncts came to be looked upon as the essential feature, and the imprecation itself to be divested of binding force without them. Thus, in 680, when Ebroin, mayor of the palace of Burgundy, had defeated Martin, Duke of Austrasia, and desired to entice him from his refuge in the stronghold of Laon, two bishops were sent to him bearing the royal reliquaries, on which they swore that his life should be safe. Ebroin, however, had astutely removed the holy remains from their cases in advance, and when he thus got his enemy in his power, he held it but a venial indiscretion to expose Martin to a shameful death.</p>
+						<p>It was late when the day scholars went home, and the others went up-stairs to their rooms very quietly. They all had to pass the large corner room which was always given to visitors, and, although the light was turned very low, they could see through the half-closed door that Candace was trying to undress the little girl without waking her, and the senator, whose broad back was toward the door, was bending down to unbutton the little shoes, one of which he lifted and pressed to his lips just as the last pair of girls went by.</p>
+						<p>Notwithstanding the earnestness with which these teachings were enforced, it may readily be believed that the wild barbarian, who was clamoring for the restoration of stolen cattle, or the angry relatives, eager to share the wer-gild of some murdered kinsman, would scarce submit to be balked of their rights at the cost of simple perjury on the part of the criminal. We have seen that both before and after their conversion to Christianity they had little scruple in defiling the most sacred sanctions of the oath with cunning fraud, and they could repose little confidence in the most elaborate devices which superstition could invent to render perjury more to be dreaded than defeat. It was therefore natural that they should perpetuate an ancestral custom, which had arisen from the structure of their society, and which derived its guarantee from the solidarity of families alluded to above. This was the custom which was subsequently known as canonical compurgation, and which long remained a part of English jurisprudence, under the name of the Wager of Law. The defendant, when denying the allegation under oath,34 appeared surrounded by a number of companions—juratores, conjuratores, sacramentales, collaudantes, compurgatores, as they were variously termed—who swore, not to their knowledge of the facts, but as sharers and partakers in the oath of denial.</p>
+					</div>
+				</div>
+			</div><!--/slideshow-->
+		</main>
+		<div class="cursor">
+			<div class="cursor__inner cursor__inner--circle"></div>
+			<div class="cursor__inner cursor__inner--dot"></div>
+		</div>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
